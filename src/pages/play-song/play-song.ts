@@ -43,8 +43,10 @@ export class PlaySongPage {
 
       if(this.icon == "md-play"){
             this.icon = "md-pause";
+            
           
-        } else {this.icon = "md-play";}     
+        } else {this.icon = "md-play";
+                this.media.pause();}     
 
    } 
 
