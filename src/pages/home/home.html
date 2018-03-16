@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Ionic Music
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -10,7 +10,7 @@
   
  
   <ion-list>
-      <ion-item *ngFor="let song of songs">
+      <ion-item *ngFor="let song of songs" navPush= "PlaySongPage" [navParams] = "{'song': song}" >
         <ion-thumbnail item-start>
           <img src="{{song.image_small}}" >
         </ion-thumbnail> 

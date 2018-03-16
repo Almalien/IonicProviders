@@ -10,6 +10,7 @@ import { HomePage } from '../pages/home/home';
 import { SongProvider } from '../providers/songs/song';
 import {HttpClientModule} from '@angular/common/http';
 import { LoadingProvider } from '../providers/loading/loading';
+import {Media} from '@ionic-native/media';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { LoadingProvider } from '../providers/loading/loading';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     SongProvider,
-    LoadingProvider
+    LoadingProvider,
+    Media
   ]
 })
 export class AppModule {}

@@ -3,7 +3,7 @@ import { NavController } from 'ionic-angular';
 import {SongProvider} from '../../providers/songs/song';
 import {SONGS_LIST} from '../../mocks/songs/song.mock';
 import {Song} from '../../models/songs/song.interface';
-import { LoadingProvider} from '../../providers/loading/loading';
+import {LoadingProvider} from '../../providers/loading/loading';
 
 
 
