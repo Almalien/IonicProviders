@@ -27,7 +27,7 @@ export class PlaySongPage {
     platform.ready().then(() => {
       this.platform.pause.subscribe(() => {
         if(this.icon=="md-pause"){
-          this.media.playSong();
+            this.playSong();
 
         }
 
