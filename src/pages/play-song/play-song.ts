@@ -36,10 +36,10 @@ export class PlaySongPage {
   }
 
   playSong(){
-    // if(!this.media){
-    //   this.loadSong(this.song.preview_url);
-    // }
-    //   this.media.play();
+      if(!this.media)
+          this.loadSong(this.song.preview_url);
+        
+      this.media.play();
 
       if(this.icon == "md-play"){
             this.icon = "md-pause";
